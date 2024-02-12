@@ -1,0 +1,99 @@
+/* Font Import */
+
+/* Color Vars */
+:root {
+	--clr-black: #121212;
+	--clr-white: #ffffff;
+	--clr-primary: #f8991d;
+	--clr-primary-dark: #db8516;
+	--clr-blue-1: #00a1ed;
+	--clr-blue-2: #00638f;
+	--clr-blue-3: #004c70;
+	--clr-blue-4: #012236;
+	--clr-blue-5: #00111c;
+}
+
+html {
+	background-color: var(--clr-blue-4);
+}
+
+/* Global Styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition-duration: 200ms;
+	scrollbar-width: thin;
+	scrollbar-color: var(--clr-blue-5) var(--clr-white);
+}
+
+*::-webkit-scrollbar {
+	width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: var(--clr-white);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--clr-blue-5);
+}
+
+@media (hover: hover) {
+	button {
+		cursor: pointer;
+	}
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Permanent Marker", sans-serif;
+	/* Heading Font */
+}
+
+p,
+a,
+li,
+input,
+textarea,
+button,
+label {
+	font-family: "Comic Neue", sans-serif;
+	font-size: 1rem;
+	/* Body Font */
+}
+
+/* Utils */
+
+.text-input {
+	width: 100%;
+	padding: 0.5rem;
+	border: 2px solid var(--clr-blue-5);
+	color: var(--clr-blue-5);
+	border-radius: 0.25rem;
+}
+
+.surface {
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+	border-radius: 0.25rem;
+	backdrop-filter: blur(0.25rem);
+	opacity: 0.75;
+	border: 2px solid var(--clr-blue-5);
+}
+
+.btn {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: var(--clr-primary);
+	color: var(--clr-white);
+	font-size: 1rem;
+	font-weight: 700;
+}
